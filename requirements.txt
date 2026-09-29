@@ -4,3 +4,5 @@ numpy==1.26.4
 dvc==3.67.1
 pathspec==0.12.1
 mlflow>=3.0
+matplotlib
+seaborn
