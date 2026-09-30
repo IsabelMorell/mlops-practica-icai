@@ -52,8 +52,7 @@ random_state=42)
        mlflow.log_param("n_estimators", n_estimators) 
        mlflow.log_metric("accuracy", accuracy) 
  
-       print(f"Modelo entrenado con n_estimators={n_estimators} y precisión: 
-{accuracy:.4f}") 
+       print(f"Modelo entrenado con n_estimators={n_estimators} y precisión: {accuracy:.4f}") 
        print("Experimento registrado con MLflow.") 
        # --- Sección de Reporte para CML --- 
        # 1. Generar la matriz de confusión 
