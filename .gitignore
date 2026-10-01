@@ -5,3 +5,4 @@ mlruns/
 mlflow.db
 *.swp
 *.swo
+/confusion_matrix.png
