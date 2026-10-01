@@ -1,3 +1,5 @@
+[core]
+    remote = origin
 ['remote "origin"']
     url = s3://dvc
     endpointurl = https://dagshub.com/202207975/mlops-practica-icai.s3
