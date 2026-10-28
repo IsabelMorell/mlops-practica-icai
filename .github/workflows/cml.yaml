@@ -10,9 +10,8 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install CML manually 
-        run: | 
-          npm install -g @dvcorg/cml
+      - name: DVC and Python setup
+        uses: iterative/setup-dvc@v1
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -52,7 +51,9 @@ jobs:
         with:
           node-version: '20'
 
-      - uses: iterative/setup-cml@v1
+      - name: Install CML manually 
+        run: | 
+          npm install -g @dvcorg/cml
 
       - name: Run training script
         env:
